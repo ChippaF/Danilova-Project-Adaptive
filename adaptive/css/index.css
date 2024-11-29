@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%; 
+}
+
+.wrapper {
+    /*background: linear-gradient(180deg, rgba(2,0,37,1) 90%, rgba(170,131,0,1) 100%);
+    */
+    background-color: #5a1818;
+    width: 100%;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+header {
+    padding: 50px 0;
+}
+
+header > span > a {
+    color: white;
+}
+
+.footer--block span > a {
+    color: white;
+}
+
+header .logo,
+footer .footer--block .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: #dc7000;
+    border-radius: 10px;
+    position: relative;
+    top: 5px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #dc7000;
+}
+
+header nav ul li.btn a {
+    background: #dc7000;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover {
+    background: #944c00;
+}
+
+/* Баннер - название библиотеки */
+
+.wrapper--catalog {
+    background-color: #fdf0d5;
+    width: 100%;
+}
+
+.banner {
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 29px;
+    color: #5a1818;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner .nav--search {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.banner .nav--search > input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 35%;
+    margin: 0;
+    padding: 14px;
+    border: 1px solid #ccc;
+}
+
+/* Популярные книги */
+
+.catalog--block > h2 {
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 36px;
+    color: #5a1818;
+    text-align: center;
+}
+
+.catalog--blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 150px;
+    max-width: 1400px;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.catalog--blocks .block {
+    color: #5a1818;
+    background-color: #cccccc;
+    border-radius: 35px;
+    width: 370px;
+    height: 368px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.catalog--blocks .block > .words {
+    width: 400px;
+    margin-top: 20px;
+}
+
+.catalog--blocks .block img {
+    width: 370px;
+    height: 368px;
+    border-radius: 35px;
+}
+
+.catalog--blocks .block h2 {
+    color: #5a1818;
+}
+
+/* Наши продукты */
+
+.wrapper--our--products {
+    background-color: #c1121f;
+    width: 100%;
+}
+
+/* Подвал */
+
+footer {
+    padding: 20px 0;
+}
+
+footer .footer--block {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer--block p {
+    width: 300px;
+    margin: 15px 0;
+}
+
+footer .footer--block h4 {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 29px;
+}
+
+footer .footer--block ul {
+    list-style: none;
+}
+
+footer .footer--block ul li {
+    margin-top: 15px;
+}
+
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #ccc;
+}
+
+footer > p {
+    text-align: center;
+}
+
